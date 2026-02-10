@@ -1,1 +1,81 @@
+Game: Christopher-Rise-Of-Mark-Ham
+QA Testing Plan Template
+Game Being Tested: Christopher-Rise-Of-Mark-Ham
+Dev Team: Gabe, Rahul, Huzaifah, Troy - Gcc07/Christofer
+QA Team: Christopher, Afton, Angel, Marcus
+Date: 2/10/2026
+
+Game Type: Text-based dungeon crawler RPG with roguelike elements
+
+Core Mechanics:
+- Random character generation
+- Multiple room types
+- Wide variety of weapons and consumables
+- Time-based combat
+- Bosses
+
+Win Condition: Beat the final boss and make it past floor 30
+Lose Condition: Die in a battle or quite
+Player Inputs: 0-9, and specific text input (EX: Continue YES or NO, Input: “NO”)
+
+Testing Strategy:
+Tuesday: 
+Goal: Define all probable bugs, Test three bugs then move on so we can get to the other games
+Test Scenarios: 
+- Test input outside given options (Ex. Input 1 or 2. User inputted 3) 
+- Tested negative speed
+- Tested spam
+
+Known: issue found today:
+- On the start menu inputting a number that is not 1-2 jumps straight into the game which is not intended. Invalid input check (Severity: Medium, Priority: )
+- If you spam input while text is being displayed your input affects the next input checks. This stacks and can break the game (Severity: High, Priority: )
+- Setting text speed to a negative number and playing the game crashes it. No check/validation for negative speed (Severity: Critical, Priority: )
+
+Wednesday:
+Goal: Define all complex bugs
+Test Scenarios: 
+- Non-stop complex chained actions
+Known: issue found today:
+
+
+
+Thursday:
+Goal: Continue defining all complex bugs
+Test Scenarios:  
+Non-stop complex chained actions
+Known: issue found today:
+
+
+
+Friday:
+Goal: Record all bugs
+Test Scenarios: None
+Known: issue found today:
+
+
+
+Bug Categories
+By Severity
+By Type
+
+Summary Table
+(Have to put the table as an image)
+
+Notes
+Testing Environment: Java In Terminal
+Any blockers or issues with the game code itself? None. We love this group.
+Assumptions: None
+
+Recommendations for Dev Team
+Critical bugs to fix first:
+Negative text speed crashes the game
+High-priority fixes:
+Spamming valid inputs while text is being written causes prolonged inputs after text stops writing.
+
+Nice-to-have fixes: 
+Invalid number inputs on the start menu cause the game to jump straight into the game. Undesired behavior.
+
+Testing completed by: Christopher
+
+Date submitted: 2/13/2025
 
